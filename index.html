@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>💱 Global Currency Converter</h1>
+
+    <div class="usd-info">
+        <p id="usdRate">Loading...</p>
+    </div>
+
+    <div class="converter-box">
+        <input type="number" id="amount" placeholder="Enter amount">
+
+        <div class="dropdowns">
+            <select id="fromCurrency"></select>
+
+            <button id="swapBtn">⇄</button>
+
+            <select id="toCurrency"></select>
+        </div>
+
+        <button onclick="convertCurrency()">Convert</button>
+
+        <div class="result" id="result"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
